@@ -17,16 +17,25 @@
 }
 
 body {
+    position: relative;
     background-color: var(--corbackground);
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
 }
 
 main {
+    /* position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,); */
+
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.993);
-    width: 60vw;
-    height: 80vh;
+    width: 270px;
+    min-height: 80vh;
     margin: auto;
-    margin-top: 68px;
+    margin-top: 70px;
     box-shadow: -4px 4px 4px rgba(16, 23, 34, 0.867);
     /* padding: 2%;
     padding-left: 3%;
@@ -67,8 +76,8 @@ form#usuario {
 
 form#senha {
     display: block;
-    background-color: rgb(72, 31, 221);
-    padding-bottom:2%;
+    background-color: rgb(31, 116, 221);
+    padding:2%;
 }
 
 input {
@@ -84,10 +93,10 @@ div {
     display: block;
     font-size: 0.8em;
     font-family: var(--fonte_botao);
-    margin-left: 16px;
     text-align: center;
-    margin-bottom: 3px;
-    margin-top: 3px;
+    margin-left: 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
     padding: 12px;
     width: 80%;
 }
