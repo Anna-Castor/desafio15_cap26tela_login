@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+:root {
+    --corbackground: rgb(58, 49, 108) ;
+    --corbotao: rgb(85, 134, 203) ;
+    --cor2: ;
+
+    --fonte_padrao: Arial;
+    --fonte_botao: 'Verdana';
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--fonte_padrao);
+    color: rgb(29, 29, 29);
+}
+
+body {
+    background-color: var(--corbackground);
+}
+
+main {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.993);
+    width: 60vw;
+    height: 80vh;
+    margin: auto;
+    margin-top: 68px;
+    box-shadow: -4px 4px 4px rgba(16, 23, 34, 0.867);
+    /* padding: 2%;
+    padding-left: 3%;
+    padding-right: 3%;  */
+}
+
+#img { 
+    background-image: url(../imagens/fundo_padrao.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-position: left top;
+    height: 180px;
+    border: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 5px;
+    margin-top: 5%;
+    font-style: bolder;
+}
+
+p {
+    text-align: justify;
+    font-size: 0.8em;
+    padding-top: 1%;    padding: 5%;
+}
+
+form#usuario {
+    display: block;
+    background-color: rgb(79, 35, 142);
+    padding-bottom:2%;
+    margin-bottom: 2px;
+}
+
+form#senha {
+    display: block;
+    background-color: rgb(72, 31, 221);
+    padding-bottom:2%;
+}
+
+input {
+   
+}
+
+
+
+
+
+
+div {
+    display: block;
+    font-size: 0.8em;
+    font-family: var(--fonte_botao);
+    margin-left: 16px;
+    text-align: center;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    padding: 12px;
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.entrar:hover {
+    cursor: pointer;
+    background-color: rgb(104, 166, 254) ;
+}
+
+div.recuperarsenha:hover {
+    cursor: pointer;
+    background-color: rgb(104, 166, 254) ;
+    color: white;
+}
+
+
+.entrar {
+    background-color: var(--corbotao);
+    border-radius: 5px;
+    color: white;
+}
+
+.recuperarsenha {
+    border: 1.5px solid rgb(183, 220, 242);
+    border-radius: 5px;
+    color: rgb(157, 157, 157);
+}
