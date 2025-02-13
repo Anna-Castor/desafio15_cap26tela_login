@@ -3,7 +3,7 @@
 :root {
     --corbackground: rgb(58, 49, 108) ;
     --corbotao: rgb(85, 134, 203) ;
-    --cor2: ;
+    --cor2: rgb(122 89 159);
 
     --fonte_padrao: Arial;
     --fonte_botao: 'Verdana';
@@ -14,32 +14,26 @@
     margin: 0px;
     font-family: var(--fonte_padrao);
     color: rgb(29, 29, 29);
+    box-sizing: border-box;
 }
 
 body {
     position: relative;
     background-color: var(--corbackground);
-    box-sizing: border-box;
     height: 100%;
     width: 100%;
 }
 
 main {
-    /* position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,); */
-
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.993);
     width: 270px;
     min-height: 80vh;
     margin: auto;
     margin-top: 70px;
-    box-shadow: -4px 4px 4px rgba(16, 23, 34, 0.867);
-    /* padding: 2%;
-    padding-left: 3%;
-    padding-right: 3%;  */
+    box-shadow: -4px 4px 4px rgba(22, 16, 34, 0.867);
+    padding-bottom: 20px;
+    overflow: hidden;
 }
 
 #img { 
@@ -49,14 +43,13 @@ main {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-position: left top;
-    height: 180px;
+    height: 220px;
     border: none;
 }
 
 h1 {
     text-align: center;
     font-size: 1.5em;
-    margin: 5px;
     margin-top: 5%;
     font-style: bolder;
 }
@@ -64,67 +57,80 @@ h1 {
 p {
     text-align: justify;
     font-size: 0.8em;
-    padding-top: 1%;    padding: 5%;
+    padding: 5%;
+    padding-bottom: 6%;
 }
 
-form#usuario {
+form {
+    background-color: var(--corbackground);
+    border-radius: 8px;
+    border-radius: 5px;
     display: block;
-    background-color: rgb(79, 35, 142);
-    padding-bottom:2%;
-    margin-bottom: 2px;
-}
-
-form#senha {
-    display: block;
-    background-color: rgb(31, 116, 221);
-    padding:2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 7px;
+    margin-top: 5px;
+    padding: 5px;
+    width: 90%;
+    height: 42px;
+    box-sizing: border-box;
 }
 
 input {
-   
+    box-sizing: border-box;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.973);
+    float: right;
+    width: 80%;
+    height:100%;
 }
 
+input#insirasenha {
+    margin-bottom: 12px;
+    padding: 0;
+}
 
-
-
-
-
-div {
+button {
+    box-sizing: border-box;
+    background-color: var(--corbotao);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.297);
+    color: white;
     display: block;
     font-size: 0.8em;
     font-family: var(--fonte_botao);
     text-align: center;
-    margin-left: 16px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    padding: 12px;
-    width: 80%;
+    width: 243px;
+    height: 42px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(104, 166, 254) ;
 }
 
 a {
     text-decoration: none;
+    font-family: var(--fonte_botao);
+    color: lightgrey;
 }
-
-div.entrar:hover {
-    cursor: pointer;
-    background-color: rgb(104, 166, 254) ;
-}
-
-div.recuperarsenha:hover {
-    cursor: pointer;
-    background-color: rgb(104, 166, 254) ;
-    color: white;
-}
-
-
-.entrar {
-    background-color: var(--corbotao);
+div.recuperarsenha {
+    text-align: center;
+    display: block;
+    margin-top: 57px;
+    margin-left: 5%;
     border-radius: 5px;
-    color: white;
+    border: 0.5px solid rgb(183, 220, 242);
+    width: 243px;
+    height: 42px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.184);
 }
 
-.recuperarsenha {
-    border: 1.5px solid rgb(183, 220, 242);
-    border-radius: 5px;
-    color: rgb(157, 157, 157);
+.recuperarsenha:hover {
+    cursor: pointer;
+    background-color: rgb(187, 188, 188) ;
+    border: none;
+    color: white;
 }

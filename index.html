@@ -13,18 +13,22 @@
         <h1>Login</h1>
         <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
 
-        <form id="usuario" action="login.php" method="post">
-            <label>
-            </label>
-            <input>
+        <form id="usuario" action="login.php" method="post" autocomplete="on">
+            <label for="email"></label>
+            <input type="email" autocomplete="email" id="email" placeholder=" insira seu e-mail">
         </form>
 
-        <form id="senha" action="login.php" method="post">
-            <input>
+        <form id="senha" action="login.php" method="post" autocomplete="on">
+            <label for="current-password"></label>
+            <input id="insirasenha" type="current-password" autocomplete="current-password" id="password" placeholder=" insira sua senha" required>
+            <button type="submit" class="entrar">Entrar</button>
         </form>
 
-        <a href="#"><div class="entrar">Entrar</div></a>
-        <a href="#"><div class="recuperarsenha">Esqueci a senha</div></a>
+
+        <a href="https://www.youtube.com/">
+            <div class="recuperarsenha">Esqueci a senha</button>
+        </a>
+
 
     </main>
     
